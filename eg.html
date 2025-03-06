@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DriveSmart - Your One-Stop Car Hub</title>
+    <!-- Add CSS libraries -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .hero-section {
+            background: url('https://example.com/car-banner.jpg') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+        }
+        .vehicle-card {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">DriveSmart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Vehicle Catalog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Test Drive</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary text-white" href="#">Login/Sign-Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div>
+            <h1>Welcome to DriveSmart</h1>
+            <p>Your One-Stop Car Hub - Buy, Test Drive, and Explore Cars</p>
+            <a href="#" class="btn btn-light btn-lg">Explore Now</a>
+        </div>
+    </section>
+
+    <!-- Vehicle Catalog -->
+    <section class="container mt-5">
+        <h2 class="text-center mb-4">Our Top Vehicles</h2>
+        <div class="row">
+            <!-- Vehicle Card 1 -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="https://example.com/car1.jpg" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Corolla 2023</h5>
+                        <p class="card-text">Starting at $20,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehicle Card 2 -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="https://example.com/car2.jpg" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Honda Civic 2023</h5>
+                        <p class="card-text">Starting at $22,500</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Vehicle Card 3 -->
+            <div class="col-md-4">
+                <div class="card vehicle-card">
+                    <img src="https://example.com/car3.jpg" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tesla Model 3</h5>
+                        <p class="card-text">Starting at $35,000</p>
+                        <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login/Sign-Up Section -->
+    <section class="container mt-5 mb-5">
+        <h2 class="text-center">Login or Create an Account</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                    <div class="text-center mt-3">
+                        <a href="#">Don't have an account? Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>DriveSmart &copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

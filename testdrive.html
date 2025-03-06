@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOK A TEST DRIVE (STEER CLEAR)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+           
+        }
+
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #dededee0;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"],
+        input[type="date"],
+        input[type="time"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .checkbox-group {
+            margin-bottom: 20px;
+        }
+
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .book-btn {
+            background-color: #5025c6f7;
+            color: white;
+        }
+
+        .reset-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        .home-btn {
+            background-color: #000000f7;
+            color: white;
+
+        }
+
+        .button-container button:hover {
+            opacity: 0.9;
+        }
+
+    </style>
+</head>
+<body style="background-image:url('WhatsApp Image 2025-02-16 at 11.22.33 AM.jpeg');
+background-size: cover;
+background-position: center;">
+
+    <div class="container">
+        <h2>BOOK A TEST DRIVE (STEER CLEAR)</h2>
+        <form action="test-drive.php" method="POST">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="license">Driving License Number:</label>
+            <input type="text" id="license" name="license" placeholder="Enter your driving license number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+
+            <label for="pincode">Pincode:</label>
+            <input type="number" id="pincode" name="pincode" placeholder="Enter your pincode" required>
+
+            <!-- Date and Time Picker -->
+            <label for="testDate">Test Drive Date:</label>
+            <input type="date" id="testDate" name="testDate" required>
+
+            <label for="testTime">Test Drive Time:</label>
+            <input type="time" id="testTime" name="testTime" required>
+
+            <div class="checkbox-group">
+                <label><strong>Select Car:</strong></label>
+                <input type="checkbox" id="tataHarrier" name="car[]" value="Tata Harrier">
+                <label for="tataHarrier">Tata Harrier</label><br>
+
+                <input type="checkbox" id="hyundaiCreta" name="car[]" value="Hyundai Creta">
+                <label for="hyundaiCreta">Hyundai Creta</label><br>
+
+                <input type="checkbox" id="suzukiFronx" name="car[]" value="Suzuki Fronx">
+                <label for="suzukiFronx">Suzuki Fronx</label><br>
+
+                <input type="checkbox" id="kiaSeltos" name="car[]" value="Kia Seltos">
+                <label for="kiaSeltos">Kia Seltos</label><br>
+            </div>
+
+            <div class="button-container">
+                <button type="submit" class="book-btn">Book</button>
+                <button type="reset" class="reset-btn">Reset</button>
+                <button type="button" class="home-btn" onclick="location.href='/home/joswin/Documents/steer-clear/index.html'">HOME</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

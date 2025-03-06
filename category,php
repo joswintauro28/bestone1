@@ -1,0 +1,32 @@
+<?php
+// Check if the form is submitted
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    // Get the form data
+    $carCategory = $_POST['carCategory'];  // Car category (SUV/Hatchback)
+    $fuelType = $_POST['fuelType'];        // Fuel type (Petrol, Diesel, Electric, Hybrid)
+    $budget = $_POST['budget'];            // User's budget
+    $selectedCars = isset($_POST['car']) ? $_POST['car'] : [];  // Selected cars (array)
+
+    // Display the form data
+    echo "<h2>Your Car Selection</h2>";
+    
+    echo "<p><strong>Car Category:</strong> " . ucfirst($carCategory) . "</p>";
+
+    // Check if cars were selected
+    if (!empty($selectedCars)) {
+        echo "<p><strong>Selected Cars:</strong> " . implode(", ", $selectedCars) . "</p>";
+    } else {
+        echo "<p><strong>No cars selected.</strong></p>";
+    }
+
+    echo "<p><strong>Fuel Type:</strong> " . ucfirst($fuelType) . "</p>";
+    echo "<p><strong>Your Budget:</strong> ₹" . number_format($budget) . "</p>";
+    
+    // Optionally, you can store this data into a database or send it via email if required.
+} else {
+    echo "<p>No form submitted yet.</p>";
+}
+?>
+
+<!-- Button to go back to the form -->
+<p><a href="index.html">Go Back to Form</a></p>
